@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-screen-edges"
+      version="1.0.0">
+    <name>ScreenEdgesPlugin</name>
+    <description>Cordova Screen Edges Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,screenEdges,edges</keywords>
+    <repo>https://github.com/distinctdan/cordova-plugin-screen-edges.git</repo>
+    <issue>https://github.com/distinctdan/cordova-plugin-screen-edges/issues</issue>
+
+    <engines>
+        <engine name="cordova-ios" version=">=5.0.0" /><!-- Requires CordovaPlugin.preferences -->
+    </engines>
+
+    <platform name="ios">
+        <js-module src="www/screenEdges_iOS.js" name="ScreenEdges">
+            <clobbers target="ScreenEdgesPlugin" />
+        </js-module>
+
+        <config-file parent="/*" target="config.xml">
+            <feature name="ScreenEdgesPlugin">
+                <param name="ios-package" value="ScreenEdgesPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/ScreenEdgesPlugin.h" />
+        <source-file src="src/ios/ScreenEdgesPlugin.m" />
+        <header-file src="src/ios/CDVViewController+ScreenEdgesPlugin.h" />
+        <source-file src="src/ios/CDVViewController+ScreenEdgesPlugin.m" />
+    </platform>
+
+    <platform name="android">
+        <js-module src="www/screenEdges_android.js" name="ScreenEdges">
+            <clobbers target="ScreenEdgesPlugin" />
+        </js-module>
+    </platform>
+
+</plugin>

@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-screen-edges",
+  "version": "1.0.0",
+  "description": "Cordova Screen Edges Plugin",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-screen-edges",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": "https://github.com/distinctdan/cordova-plugin-screen-edges",
+  "bugs": "https://github.com/distinctdan/cordova-plugin-screen-edges/issues",
+  "keywords": [
+    "cordova",
+    "screenEdges",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "screen",
+    "edges",
+    "gestures",
+    "preferredScreenEdgesDeferringSystemGestures"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": { "cordova-ios": ">=5.0.0"}
+    },
+    "node": ">=6.0.0"
+  },
+  "author": "Daniel Stone",
+  "license": "MIT",
+  "homepage": "https://github.com/distinctdan/cordova-plugin-screen-edges"
+}
