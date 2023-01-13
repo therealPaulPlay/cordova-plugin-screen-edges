@@ -1,15 +1,25 @@
 {
-  "name": "cordova-plugin-screen-edges",
+  "name": "@paulplay/cordova-plugin-screen-edges",
   "version": "1.0.0",
   "description": "Cordova Screen Edges Plugin",
   "types": "./types/index.d.ts",
+  "author": {
+    "name": "authorName",
+    "email": "email",
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/therealPaulPlay/cordova-plugin-screen-edges"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/paulplay"
+  },
   "cordova": {
     "id": "cordova-plugin-screen-edges",
     "platforms": [
       "ios"
     ]
   },
-  "repository": "https://github.com/distinctdan/cordova-plugin-screen-edges",
   "bugs": "https://github.com/distinctdan/cordova-plugin-screen-edges/issues",
   "keywords": [
     "cordova",
@@ -27,7 +37,6 @@
     },
     "node": ">=6.0.0"
   },
-  "author": "Daniel Stone",
   "license": "MIT",
   "homepage": "https://github.com/distinctdan/cordova-plugin-screen-edges"
 }
